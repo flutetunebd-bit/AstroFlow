@@ -5,13 +5,22 @@ media_folder: "public/assets/images"
 public_folder: "/assets/images"
 
 collections:
-  - name: "pages"
-    label: "Pages"
+  - name: "agency_content"
+    label: "IT Agency Customization"
     files:
-      - file: "src/content/config.ts"
-        label: "Home Page"
-        name: "home"
+      - file: "src/data/config.json" # আপনার থিমের মেইন ডাটা ফাইল
+        label: "Home Page Settings"
+        name: "homepage"
         fields:
-          - { label: "Hero Title", name: "title", widget: "string" }
-          - { label: "Hero Subtitle", name: "subtitle", widget: "text" }
+          - { label: "Agency Name / Hero Title", name: "title", widget: "string" }
+          - { label: "Hero Subtitle (Description)", name: "subtitle", widget: "text" }
+          - { label: "Primary Button Text", name: "btn_text", widget: "string" }
           - { label: "Banner Image", name: "image", widget: "image" }
+          
+      - file: "src/content/services/service-1.md" # প্রথম সার্ভিসের ফাইল
+        label: "Service 1 (e.g. Video Editing)"
+        name: "service1"
+        fields:
+          - { label: "Service Title", name: "title", widget: "string" }
+          - { label: "Service Description", name: "description", widget: "text" }
+          - { label: "Service Icon", name: "icon", widget: "string" }
