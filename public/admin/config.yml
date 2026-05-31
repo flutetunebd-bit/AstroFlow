@@ -1,9 +1,5 @@
 backend:
-  name: github
-  repo: flutetunebd/AstroFlow
-  branch: master
-
-local_backend: true
+  name: test-repo
 
 media_folder: "public/assets/images"
 public_folder: "/assets/images"
@@ -12,7 +8,7 @@ collections:
   - name: "pages"
     label: "Pages"
     files:
-      - file: "src/content/config.ts" # আপনার থিমের কন্টেন্ট ফাইল অনুযায়ী এটি পরে চেঞ্জ করা যাবে
+      - file: "src/content/config.ts"
         label: "Home Page"
         name: "home"
         fields:
